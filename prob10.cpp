@@ -55,7 +55,8 @@ typedef struct
 int main(int argc, char *argv[])
 {
   primes_list primes = primes_list(2000000);
-  uint64_t sum1, sum2 = 0;
+  uint64_t sum1 = 0;
+  uint64_t sum2 = 0;
   int halfway = primes.size / 2;
 
   pthread_t tid;
